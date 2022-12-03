@@ -8,6 +8,12 @@ local keymap = vim.keymap
 
 keymap.set("i", "jk", "<ESC>")
 
+-- navigation that keeps you centered
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
+
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 keymap.set("n", "x", '"_x') -- delete character without copying into register

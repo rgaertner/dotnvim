@@ -105,6 +105,12 @@ return packer.startup(function(use)
 	-- Git command inside vim
 	use("tpope/vim-fugitive")
 
+	-- Github integration
+	use({
+		"ldelossa/gh.nvim",
+		requires = { { "ldelossa/litee.nvim" } },
+	})
+
 	-- showing keybindings
 	use("folke/which-key.nvim")
 
